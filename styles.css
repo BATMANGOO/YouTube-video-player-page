@@ -56,6 +56,11 @@ nav img {
 	height: 50px;
 }
 
+.container {
+	display: flex;
+	background-color: #F9F9F9;
+}
+
 .search-bar input {
 	width: 600px;
 	height: 40px;
@@ -65,9 +70,103 @@ nav img {
 .search-bar span {
 	background-color: grey;
 	padding: 15px 20px;
-	right: 5px;
 }
 
 .search-img {
 	height: 10px;
+}
+
+.video-sec {
+	padding: 30px 0 0 120px;
+}
+
+.suggestions-sec {
+	padding: 25px 60px 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+:focus {
+  outline: none
+}
+
+.search-icon {
+	height: 15px;
+}
+
+/* ==-====-===-==== */
+
+
+.box {
+  width: 80%;
+  height: 55px;
+  background-color: #fff;
+  box-shadow: 0 2px 33px rgba(0,0,0,.77)
+}
+
+.search-bar {
+  width: 40%;
+  line-height: 54px;
+  position: relative
+}
+
+input[type="text"] {
+  width: 89%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #BEBEBE;
+  border-radius: 2px 0 0 2px;
+  z-index: 2
+}
+
+input:focus {
+  border: 1.1px solid #1c62b9;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+}
+
+button {
+  position: absolute;
+  width: 11%;
+  height: 33px;
+  border: 1px solid #BEBEBE;
+  border-left: 0;
+  top: 11px;
+  right: 0px;
+  border-radius: 0px 2px 2px 0;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f0f0f0;
+  z-index: 1
+}
+
+button i {
+  opacity: .5;
+  transition: all .07s ease-in-out
+}
+
+button:hover i {
+  opacity: .95
+}
+
+button:hover {
+  background-color: #E4E4E4;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15),
+    inset 0 0 2px rgba(0,0,0,.05);
+  transition: all .07s ease-in-out
+}
+
+/* ==-====-===-==== */
+
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  text-shadow: 0 0 20px black;
+  cursor: none;
+  margin-top: 22px
 }
